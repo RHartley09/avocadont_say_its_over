@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="javascript:history.go(0)">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a id="hide" class="nav-link" href="#">Hide</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Data Sets
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://www.kaggle.com/neuromusic/avocado-prices?select=avocado.csv" target="_blank">Avocado Price Data</a>
+              <a class="dropdown-item" href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm" target="_blank">Gas Price Data</a>
+              <a class="dropdown-item" href="https://openweathermap.org/history" target="_blank">Weather Data</a>
+              <a class="dropdown-item" href="https://agtransport.usda.gov/Truck/Recent-Weekly-US-Average-Refrigerated-Truck-Rates/ux59-h6jx" target="_blank">Transport Data</a>
+              <a class="dropdown-item" href="https://data.ers.usda.gov/reports.aspx?ID=17850" target="_blank">Banana Price Data</a>
+            </div>
+          </li>
+        </ul>
+  
+      </div>
+    </nav>
+    
+    <div class="container">
+      <div id="titleblock" class="jumbotron">
+        <h1 class="display-4"><strong>Avocados Guac Our World!</strong></h1>
+        <p class="lead">Abdulla Alrashdi, Jeff Bauman, Jake Brucks, Alex Cole, and Robert Hartley</p>
+        <hr>
+        <h4 class="display-5">An in depth look at avocado prices and variables that potentially drive that price.</h4>
+        <hr>
+        <h5>Click on the avocado to see different analysis.</h5>
+        <ul style="list-style: none;">
+          <li>Click the skin to see transport data visualizations</li>
+          <li>Click the fruit shadow to see _____ visualizations</li>
+          <li>Click the fruit to see _____ visualizations</li>
+          <li>Click the seed to see _____ visualizations</li>
+          <li><em>Select "Hide" in nav bar to hide Title Block</em></li>
+      </ul>
+      </div>
+    </div>
+  
+  <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wrapper">
+              <div class="avocado">
+                   <div class="avocado__skin"></div>
+                   <div class="avocado__inner-shadow"></div>
+                   <div class="avocado__inner"></div>
+                   <div class="avocado__seed"></div>
+                   <div class="avocado__seed-highlight"></div>
+                   <div class="avocado__cheek avocado__cheek--left"></div>
+                   <div class="avocado__cheek avocado__cheek--right"></div>
+                   <div class="avocado__eye avocado__eye--left"></div>
+                   <div class="avocado__eye avocado__eye--right"></div>
+                   <div class="avocado__smile"></div>
+              </div>          
+            </div>
+          </div>
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-4">
+            <h3 id="dashboard_title" class="text-center">Data Dashboard</h3>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 id="dashboard_subtitle" class="card-title">Data Source Info</h5>
+                <p id="dashboard_text" class="card-text">Information about the data used in the visualizations below.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+      <div class="row">
+        <div id="chart" class="col-md-12">
+          
+          </div>
+      </div>
+  </div>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+<script type="text/javascript" src="static/js/logic.js"></script>
+  
+</body>
+</html>
