@@ -14,7 +14,8 @@ from config import password
 from sqlalchemy import create_engine
 
 db_name = "avocado_db"
-engine = create_engine(f'postgresql://postgres:{password}@localhost:5432/{db_name}')
+# engine = create_engine(f'postgresql://postgres:{password}@localhost:5432/{db_name}')
+engine = create_engine('postgres://hqvlqzjiivxhbq:2939ea5341bc0ffdd6b426d3b5dce6b2530fffa968c8171db36b48fc24d71d0d@ec2-52-200-82-50.compute-1.amazonaws.com:5432/d14jp5o6rlp0b8')
 connection = engine.connect()
 connection
 
