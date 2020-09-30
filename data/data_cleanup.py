@@ -15,12 +15,12 @@ password = password
 # In[2]:
 
 
-transportData = "Refrigerated_Truck_Rates_and_Availability_Full.csv"
-AvoTransportData = "Refrigerated_Truck_Rates_and_Availability_Avo.csv"
-avo_data = "avo_prices.csv"
-gas_data = "gas_prices.csv"
-loadweather = "SanDiegoWeatherData.csv"
-bananaprices = "banana_prices.csv"
+transportData = "data/Refrigerated_Truck_Rates_and_Availability_Full.csv"
+AvoTransportData = "data/Refrigerated_Truck_Rates_and_Availability_Avo.csv"
+avo_data = "data/avo_prices.csv"
+gas_data = "data/gas_prices.csv"
+loadweather = "data/SanDiegoWeatherData.csv"
+bananaprices = "data/banana_prices.csv"
 
 
 # In[3]:
