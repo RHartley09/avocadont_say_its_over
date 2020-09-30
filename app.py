@@ -3,7 +3,7 @@ from flask import Flask, render_template
 from flask_sqlalchemy import sqlalchemy
 import psycopg2
 import pandas as pd
-from bson import json_util
+# from bson import json_util
 import json
 import datetime
 
