@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="static/css/style.css">
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -43,18 +43,9 @@
     <div class="container">
       <div id="titleblock" class="jumbotron">
         <h1 class="display-4"><strong>Avocados Guac Our World!</strong></h1>
-        <p class="lead">Abdulla Alrashdi, Jeff Bauman, Jake Brucks, Alex Cole, and Robert Hartley</p>
+        <p class="lead">Abdulla Alrashdi, Jake Brucks, Alex Cole, and Robert Hartley</p>
         <hr>
         <h4 class="display-5">An in depth look at avocado prices and variables that potentially drive that price.</h4>
-        <hr>
-        <h5>Click on the avocado to see different analysis.</h5>
-        <ul style="list-style: none;">
-          <li>Click the skin to see transport data visualizations</li>
-          <li>Click the fruit shadow to see _____ visualizations</li>
-          <li>Click the fruit to see _____ visualizations</li>
-          <li>Click the seed to see _____ visualizations</li>
-          <li><em>Select "Hide" in nav bar to hide Title Block</em></li>
-      </ul>
       </div>
     </div>
   
@@ -83,7 +74,15 @@
             <div class="card" style="width: 18rem;">
               <div class="card-body">
                 <h5 id="dashboard_subtitle" class="card-title">Data Source Info</h5>
-                <p id="dashboard_text" class="card-text">Information about the data used in the visualizations below.</p>
+                <p id="dashboard_text" class="card-text">Click the skin to see transport data visualizations</p>
+                <h5>Click on the avocado to see different analysis.</h5>
+                <ul style="list-style: none;">
+                  <li>Click the skin to see transport data visualizations</li>
+                  <li><a id="weatherviz" class="nav-link" href="/pages/avoWeather.html">Click the fruit shadow to see weather visualizations</a></li>
+                  <li>Click the fruit to see _____ visualizations</li>
+                  <li>Click the seed to see _____ visualizations</li>
+                  <li><em>Select "Hide" in nav bar to hide Title Block</em></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -92,7 +91,7 @@
   
       <div class="row">
         <div id="chart" class="col-md-12">
-          
+          </div>
           </div>
       </div>
   </div>
