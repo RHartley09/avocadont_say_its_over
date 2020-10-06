@@ -131,7 +131,7 @@ d3.select(".avocado__inner").on("click", weather);
   
   function weather() {
     console.log('open page')
-    location.replace("pages/avoWeather.html",
+    location.replace("../pages/avoWeather.html",
       '_parent'
       );
     };

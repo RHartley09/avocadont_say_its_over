@@ -20,6 +20,10 @@ h5.card-title {
     text-align: center;
 }
 
+#viz-link {
+    color: #212529;
+}
+
 /* avo illustration style */
 /* Source -- https://codepen.io/ainarela/pen/owBovZ */
 /* @ainarela on CodePen */
@@ -177,14 +181,14 @@ h5.card-title {
     border-radius: 50%;
     top: -24px;
 }
-/* @keyframes moving {
+@keyframes moving {
     0% {
         transform: rotate(12deg);
    }
     100% {
         transform: rotate(-8deg);
    }
-} */
+}
 @keyframes blinking {
     59.5% {
         height: 10px;

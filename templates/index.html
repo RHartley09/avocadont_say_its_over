@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Document</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
     <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
 </head>
 <body>
@@ -70,19 +70,14 @@
           <div class="col-md-1">
           </div>
           <div class="col-md-4">
-            <h3 id="dashboard_title" class="text-center">Data Dashboard</h3>
             <div class="card" style="width: 18rem;">
               <div class="card-body">
-                <h5 id="dashboard_subtitle" class="card-title">Data Source Info</h5>
-                <p id="dashboard_text" class="card-text">Click the skin to see transport data visualizations</p>
-                <h5>Click on the avocado to see different analysis.</h5>
-                <ul style="list-style: none;">
-                  <li>Click the skin to see transport data visualizations</li>
-                  <li><a id="weatherviz" class="nav-link" href="/pages/avoWeather.html">Click the fruit shadow to see weather visualizations</a></li>
-                  <li>Click the fruit to see _____ visualizations</li>
-                  <li>Click the seed to see _____ visualizations</li>
-                  <li><em>Select "Hide" in nav bar to hide Title Block</em></li>
-                </ul>
+                <h3 id="dashboard_subtitle" class="text-center">Visualizations & Analysis</h3><br>
+                <h5 class="text-center">Click on the links below to see different analysis.</h5><br>
+                  <p class="text-center"><a id="viz-link" href="pages/avoGas.html">Gas data visualizations</a></p>
+                  <p class="text-center"><a id="viz-link" href="pages/avoWeather.html">Weather visualizations</a></p>
+                  <p class="text-center"><a id="viz-link" href="pages/avoTransport.html">Transport visualizations</a></p>
+                  <p class="text-center"><a id="viz-link" href="pages/avoRegion.html">Regional visualizations</a></p>
               </div>
             </div>
           </div>
@@ -101,7 +96,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
-<script type="text/javascript" src="static/js/logic.js"></script>
+<script type="text/javascript" src="../static/js/logic.js"></script>
   
 </body>
 </html>
