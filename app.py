@@ -23,13 +23,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    avo_data = get_data()
-    transport = get_transport()
+    # avo_data = get_data()
+    # transport = get_transport()
     # weather = get_weather()
     # bananas = get_bananas()
     # gas = get_gas()
 
-    return render_template("index.html", avo_data=avo_data, transport=transport) #weather=weather, bananas=bananas, gas=gas
+    return render_template("index.html") #avo_data=avo_data, transport=transport) #weather=weather, bananas=bananas, gas=gas
 
 # @app.route("/api/v1.0/data")
 # def get_data():
